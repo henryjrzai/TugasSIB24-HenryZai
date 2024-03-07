@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div>
+      <img src="img/logo.png" alt="">
+    </div>
+    <h1>Form Pendaftaran Anggota Club</h1>
+  </nav>
+
+  <main class="container">
+    <form>
+      <table>
+        <tr>
+          <td><label for="nama">Nama</label></td>
+          <td><input type="text" id="nama" name="nama" placeholder="Nama Lengkap"></td>
+        </tr>
+        <tr>
+          <td><label for="email_aktif">Email</label></td>
+          <td><input type="email" id="email_aktif" name="email_aktif" placeholder="Email aktif"></td>
+        </tr>
+        <tr>
+          <td><label for="no_hp">No HP</label></td>
+          <td><input type="tel" id="no_hp" name="no_hp" placeholder="No HP aktif"></td>
+        </tr>
+        <tr>
+          <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+          <td>
+            <input id="laki_laki" name="jenis_kelamin" type="radio" value="laki_laki">
+            <label for="laki_laki">Laki-laki</label>
+            <input id="perempuan" name="jenis_kelamin" type="radio" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="prodi">Prodi</label></td>
+          <td>
+            <select id="prodi" name="prodi">
+              <option value="" hidden>Pilih</option>
+              <option value="prodi1">Prodi 1</option>
+              <option value="prodi2">Prodi 2</option>
+              <option value="prodi3">Prodi 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hobi">Hobi</label></td>
+          <td>
+            <input id="membaca" name="hobi" type="checkbox" value="membaca">
+            <label for="membaca">Membaca</label>
+            <input id="menulis" name="hobi" type="checkbox" value="menulis">
+            <label for="menulis">Menulis</label>
+            <input id="menyanyi" name="hobi" type="checkbox" value="menyanyi">
+            <label for="menyanyi">Menyanyi</label>
+            <input id="olahraga" name="hobi" type="checkbox" value="olahraga">
+            <label for="olahraga">Olahraga</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td><textarea id="alamat" name="alamat" placeholder="Alamat lengkap"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="foto_diri">Foto Diri</label></td>
+          <td><input type="file" id="foto_diri" name="foto_diri"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Daftar"></td>
+        </tr>
+      </table>
+    </form>
+  </main>
+  
+  <footer>
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="footer-item">
+      <p>Web Dev Club</p>
+      <p>Universitas Katolik Santo Thomas Medan</p>
+    </div>
+  </footer>
+</body>
+</html>
