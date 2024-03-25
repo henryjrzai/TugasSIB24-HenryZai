@@ -271,6 +271,7 @@ textarea{
   margin: 5px 0;
 }
 
+
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 40em) {
   .menu-button-container {

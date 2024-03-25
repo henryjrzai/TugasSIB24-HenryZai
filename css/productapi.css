@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    border-radius: 30px;
+    padding: 20px;
+    height: 37.5rem;
+    box-shadow: 0px 6px 8px 3px rgba(128, 128, 128, 0.49);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 30px;
+    height: 50%;
+    object-fit: contain;
+}
+
+.btn-buy {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #9CAFAA;
+    color: white;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .product {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 991px) {
+    .product {
+        width: 75%;
+    }
+}
